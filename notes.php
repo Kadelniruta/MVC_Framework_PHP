@@ -19,8 +19,7 @@ if ($method === 'DELETE') {
 // ------------------------------
 
 // ----Fetches notes from the database----
-$notes = $db->query("SELECT * FROM note")->fetchAll(PDO::FETCH_ASSOC);
-
+$notes = $db->query("SELECT * FROM note")->get();
 // ----------------------------------------
 
 
